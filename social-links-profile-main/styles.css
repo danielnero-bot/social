@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* color variables */
+:root{
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey700: hsl(0, 0%, 20%);
+    --Grey800: hsl(0, 0%, 12%);
+    --Grey900: hsl(0, 0%, 8%);
+}
+/* positioning of card  */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--Grey900);
+    font-family: "Inter";
+}
+/* card container */
+.page-wrapper{
+    display: block;
+    text-align: center;
+    background-color: var(--Grey800);
+    border-radius: 15px;
+    padding: 25px;
+    color: white;
+/* styling of avatar img */
+img{
+    border-radius: 100px;
+    width: 27%;
+}
+}
+
+/* styling of paragraph */
+p{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: var(--Green);
+}
+
+/* styling of all the buttons */
+button{
+    margin-top: 15px;
+    display: block;
+    width: 320px;
+    height: 40px;
+    background-color: var(--Grey700);
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
+/* hover effect */
+button:hover{
+    background-color: var(--Green);
+    color: #000;
+    cursor: pointer;
+}
+
+
+/* buttons container */
+.buttons{
+    margin-top: 20px;
+    width: 100%;
+    height: 60%;
+}
+
+/* avatar image and info */
+.info{
+    width: 100%;
+    height: 40%;
+}
+
+
+/* mobile screen styling */
+@media screen and (max-width:600px) {
+    body{
+        button{
+            width: 100%;
+        }
+    }
+}
